@@ -116,7 +116,7 @@ input, select, textarea {
 
 		a:hover {
 			color: #ff0000 !important;
-			cursor: url('/Users/jeaff/AvionSchool/Precourse-batch3/JGohAvionSchoolFiles/Exercise1/assets/css/cursor.cur'), auto;
+			cursor: url('/Users/jeaff/AvionSchool/JGohAvionSchoolFiles/Exercise1/assets/css/cursor.cur'), auto;
 		}
 
 		a img {
@@ -151,7 +151,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		text-decoration: underline overline dotted rgb(0, 0, 0);
+		text-decoration: underline overline dashed rgb(0, 0, 0);
 		color: rgb(238, 17, 17);
 		margin: 0 0 0.75em 0;
 	}
@@ -1683,7 +1683,7 @@ input, select, textarea {
 		font-weight: 700;
 		border: 0;
 		outline: 0;
-		cursor: url('/Users/jeaff/AvionSchool/Precourse-batch3/JGohAvionSchoolFiles/Exercise1/assets/css/cursor.cur'), auto;
+		cursor: url('/Users/jeaff/AvionSchool/JGohAvionSchoolFiles/Exercise1/assets/css/cursor.cur'), auto;
 		border-radius: 8px;
 		text-shadow: -1px -1px 0.5px rgba(0, 0, 0, 0.5);
 		overflow: hidden;
@@ -1727,7 +1727,7 @@ input, select, textarea {
 		input[type="reset"].alt,
 		button.alt,
 		.button.alt {
-			background-color: #444;
+			background-color: #4b2657;
 			box-shadow: inset 0px 0px 0px 1px #242424, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.2);
 		}
 
@@ -1736,7 +1736,7 @@ input, select, textarea {
 			input[type="reset"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #4f4f4f;
+				background-color: #c29ace;
 				color: #fff !important;
 			}
 
@@ -1807,10 +1807,10 @@ input, select, textarea {
 					-webkit-transition: background-color .2s ease-in-out;
 					-ms-transition: background-color .2s ease-in-out;
 					transition: background-color .2s ease-in-out;
-					background-color: #444;
+					background-color: #4b2657;
 					border-radius: 6px;
 					box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255, 255, 255, 0.1);
-					color: #2E2E2E !important;
+					color: #c29ace !important;
 					display: block;
 					font-size: 26px;
 					height: 48px;
@@ -1915,13 +1915,17 @@ input, select, textarea {
 
 	.box {
 		background: rgb(255, 255, 255);
-		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+		box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 2px 3px 0px rgb(231, 8, 8);
 		text-align: center;
 		padding: 2em;
 	}
 
 		.box.style1 {
 			padding: 3em 2em 3.5em 2em;
+			border:3px;
+			border-style:dotted;
+			border-radius: 5px;
+			border-color: #ff0000;
 		}
 
 			.box.style1 h3 {
@@ -2012,9 +2016,9 @@ input, select, textarea {
 		}
 
 		.wrapper.style4 {
-			background-color: #303030;
+			background-color: #724b7efa;
 			color: #999;
-			text-shadow: -1px -1px 0px #181818;
+			text-shadow: -1px -1px 0px #c29ace;
 		}
 
 			.wrapper.style4 h1, .wrapper.style4 h2, .wrapper.style4 h3, .wrapper.style4 h4, .wrapper.style4 h5, .wrapper.style4 h6 {
@@ -2026,7 +2030,7 @@ input, select, textarea {
 			.wrapper.style4 form select,
 			.wrapper.style4 form textarea {
 				border: none;
-				background: #282828;
+				background: #c29ace;
 			}
 
 				.wrapper.style4 form input[type=text]:focus,
@@ -2039,7 +2043,7 @@ input, select, textarea {
 /* Nav */
 
 	#nav {
-		background-color: #282828;
+		background-color: #4b2657;
 		text-align: center;
 		position: fixed;
 		left: 0;
@@ -2082,7 +2086,7 @@ input, select, textarea {
 
 			#nav a:hover {
 				color: #fff !important;
-				background: #383838;
+				background: rgb(238, 17, 17);
 			}
 
 			#nav a.active {
