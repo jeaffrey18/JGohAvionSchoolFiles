@@ -1,0 +1,19 @@
+h1{
+    color: rebeccapurple
+ }
+
+ img {
+    width: 400px;
+ }
+
+ .thirdDiv{
+   height: 600px;
+   width: 500px;
+   background-color: rebeccapurple;
+   padding: 50px;
+   border: 2px dashed whitesmoke
+}
+ #spanId{
+     margin:50px;
+
+ }
