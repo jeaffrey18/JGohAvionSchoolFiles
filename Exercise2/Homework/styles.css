@@ -2,18 +2,65 @@ h1{
     color: rebeccapurple
  }
 
- img {
-    width: 400px;
+ .divClass {
+   background-color:hsla(0, 97%, 52%, 0.411);;
+   width: 500px;
+   margin: auto;
+   text-align: center;
  }
 
- .thirdDiv{
+ img {
+   padding: 10px;
+   width: 400px;
+   height: 200px;
+   display:block;
+   align-content: center;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+ .thirdDiv {
    height: 600px;
    width: 500px;
-   background-color: rebeccapurple;
+   background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
    padding: 50px;
-   border: 2px dashed whitesmoke
-}
+   margin: auto;
+   border: 1px solid rgb(128, 0, 248);
+   border-radius: 4px;
+   opacity: .5;
+ }
+
+ .thirdDiv:hover{
+    opacity: 1;
+ }
+
+ .imagetxt {
+   text-align: center;
+   padding: 10px 20px;
+   border: 1px double;
+   border-radius: 4px;
+
+ }
+
+ .divClass {
+    text-align: center;
+ }
+
  #spanId{
      margin:50px;
 
+ }
+
+ body, html {
+   height: 100%;
+ }
+ 
+ body {
+   background-image: url("https://thumbs.gfycat.com/HomelyFormalImpala-size_restricted.gif");
+   height: 100%;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
  }
