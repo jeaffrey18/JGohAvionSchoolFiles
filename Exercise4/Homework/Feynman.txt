@@ -1,3 +1,12 @@
 Variable is like a container that contains the answer to a question. So if i ask
 you the question, instead of giving me the answer you will give me the container instead. 
 
+Strings are the answers inside the container. 
+
+Functions are the explanation for the answer inside the variable explaining the strings.
+inside those functions we have an argument and a return. arguments are the topic of the
+function while return supports the argument. 
+
+if statements are examples for the answer inside the functions.
+
+boolean values are two possible answers. can be a choice of true or false. 
