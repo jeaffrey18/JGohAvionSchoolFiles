@@ -1,0 +1,4 @@
+for - this tells your variable to follow codes in a loop to check itself if its true or false
+&& - and - this tells your code that both statements are true and you will do it.
+|| - or - this tells your code that one of two statements is true and you will do it.
+! - not - a big no.
