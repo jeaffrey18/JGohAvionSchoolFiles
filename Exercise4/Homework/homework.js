@@ -40,6 +40,7 @@ function add(x, y) {
   var y = 5;
   return z = x + y;
 }
+console.log(add(5,7))
 
 function subtract(x, y) {
   // subtract y from x and return the value
@@ -48,36 +49,32 @@ function subtract(x, y) {
   var y = 8;
   return z = x - y;
 }
+console.log(subtract(20,8))
 
 function multiply(x, y) {
   // multiply x by y and return the value
   // code here
-  var x = 3;
-  var y = 4;
   return z = x * y;
 }
+console.log(multiply(3,4))
 
 function divide(x, y) {
   // divide x by y and return the value
   // code here
-  var x = 24;
-  var y = 2;
   return z = x / y;
 }
+console.log(divide(24,4))
 
 function areEqual(x, y) {
   // return true if x and y are the same
   // otherwise return false
   // code here
-  var x = 12;
-  var y = 12;
   if (x==y) {
-  return true;
+  return 'true';
   }
-  
-  return false;
-
+  return 'false';
 }
+console.log(areEqual(10,9))
 
 function areSameLength(str1, str2) {
   // return true if the two strings have the same length
@@ -85,14 +82,14 @@ function areSameLength(str1, str2) {
   // code here
   var str1 = "ABCDEF";
   var sln1=str1.length;
-var str2 = "123456";
+  var str2 = "123456";
   var sln2=str2.length;
-  
-if (sln1==sln2) {
+  if (sln1==sln2) {
   return true;
- }
+  }
   return false;
 }
+console.log(areSameLength("str1,str2"))
 
 function lessThanNinety(num) {
   // return true if the function argument: num , is less than ninety
@@ -103,6 +100,7 @@ function lessThanNinety(num) {
   }
    return false;
 }
+console.log(lessThanNinety(89))
 
 function greaterThanFifty(num) {
   // return true if num is greater than fifty
@@ -113,14 +111,14 @@ function greaterThanFifty(num) {
   }
    return false;
 }
+console.log(greaterThanFifty(48))
 
 function getRemainder(x, y) {
   // return the remainder from dividing x by y
   // code here
-  var x = 21;
-  var y = 2;
-  return z = x % y;
+  return x % y;
 }
+console.log(getRemainder(21,2))
 
 function isEven(num) {
   // return true if num is even
@@ -129,9 +127,9 @@ function isEven(num) {
     if(num % 2 == 0) {
     return true;
   }
-   return false;
-      
-  }
+   return false;  
+}
+console.log(isEven(24))
 
 function isOdd(num) {
   // return true if num is odd
@@ -142,69 +140,60 @@ function isOdd(num) {
   }
   return false;
 }
+console.log(isOdd(27))
 
 
 function square(num) {
   // square num and return the new value
   // hint: NOT square root!
   // code here
-  var num = Math.pow(8,2);
-  
-  return num;
+  return Math.pow(num,2);
 }
+console.log(square(4))
 
 function cube(num) {
   // cube num and return the new value
   // code here
-  var num = Math.pow(2,3);
-  
-  return num;
+ return Math.pow(num,3);
 }
+console.log(cube(4))
 
 function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
   // code here
-  var num = 4;
-  var exponent = 2;
-  
   return (Math.pow(num,exponent));
 }
+console.log(raiseToPower(4,2))
 
 function roundNumber(num) {
   // round num and return it
   // code here
-  var num = Math.round(12.10);
-  
-  return num;
+  return Math.round(num);
 }
+console.log(roundNumber(12.13))
 
 function roundUp(num) {
   // round num up and return it
   // code here
-  var num = Math.ceil(11.30);
-  
-  return num;
+  return Math.ceil(num);
 }
+console.log(roundUp(11.30))
 
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
   // code here
-  var str = 'hello world';
-  let output = str + '!' ; 
-  return output;
- }
-
+  return ((str) + "!")
+}
+console.log(addExclamationPoint('Hello World'))
 
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'Avion', 'School' -> 'Avion School'
   // code here
-  var firstName = 'Avion ';
-  var lastName = 'School'; 
-  let output = firstName + lastName;
-  return output;
+  return ((firstName) + (lastName))
 }
+console.log(combineNames('Avion ','School'))
 
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
@@ -212,9 +201,10 @@ function getGreeting(name) {
   // code here
   var name = 'Sam';
   var str1 = 'Hello '; 
-  var str2 = '!'
-  return output =  str1.concat(name, str2);
- }
+  var str2 = '!';
+  return str1.concat(name, str2);
+}
+console.log(getGreeting('name'))
 
 
 // The next three questions will have you implement math area formulas. 
@@ -223,19 +213,15 @@ function getGreeting(name) {
 function getRectangleArea(length, width) {
   // return the area of the rectangle by using length and width
   // code here
-  var length = 5;
-  var width = 6; 
-  let output = length * width;
-  return output;
+  return length * width;
 }
+console.log(getRectangleArea(5,6))
 
 function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
   // code here
-  var base = 3;
-  var height = 7;
   var bh = base*height;
-  var area = bh/2;
-  return area;
+  return bh/2;
 }
+console.log(getTriangleArea(3,7))
 

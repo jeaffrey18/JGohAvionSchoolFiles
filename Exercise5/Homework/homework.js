@@ -8,7 +8,7 @@ function getBiggest(x, y) {
     return x;
   } else {
     return y;
-}
+  }
 }
 
 function greeting(language) {
@@ -17,7 +17,6 @@ function greeting(language) {
   // language: 'Mandarin' -> 'Ni Hao!'
   // language: 'Spanish' -> 'Hola!'
   // if language is undefined return 'Hello!'
-  var language = "German";
   if (language === "German"){
     return "Guten Tag!";
   }
@@ -31,12 +30,11 @@ function greeting(language) {
     return "Hello!";
   }
 }
-console.log(greeting('language'))
+console.log(greeting(''))
 
 function isTenOrFive(num) {
   // return true if num is 10 or 5
   // otherwise return false
-  var num = 10;
   if (num === 10){
     return true;
   }
@@ -47,13 +45,12 @@ function isTenOrFive(num) {
     return false;
   }
 }
-console.log(isTenOrFive('num'))
+console.log(isTenOrFive('10'))
 
 
 function isInRange(num) {
   // return true if num is less than 50 and greater than 20
   // otherwise return false
-  var num = 45;
   if (num<50 && num>20){
     return true;
   }
@@ -61,7 +58,7 @@ function isInRange(num) {
     return false;
   }
 }
-console.log(isInRange('num'))
+console.log(isInRange(46))
 
 function isInteger(num) {
   // return true if num is an integer
@@ -70,7 +67,6 @@ function isInteger(num) {
   // -10 -> true
   // otherwise return false
   // hint: you can solve this using Math.floor
-  var num = 4.5 ;
   if (num === (Math.floor(num))) {
     return true;
   }
@@ -78,14 +74,13 @@ function isInteger(num) {
     return false;
   }
 }
-console.log(isInteger('num'))
+console.log(isInteger(4.5))
 
 function fizzBuzz(num) {
   // if num is divisible by 3 return 'fizz'
   // if num is divisible by 5 return 'buzz'
   // if num is divisible by 3 & 5 return 'fizzbuzz'
   // otherwise return num
-  var num = 15;
   if (num % 3 == 0 && num % 5 == 0){
     return "fizzbuzz";
   }
@@ -99,7 +94,7 @@ function fizzBuzz(num) {
     return num;
   }
 }
-console.log(fizzBuzz('num'))
+console.log(fizzBuzz(15))
 
 function isPrime(num) {
   // return true if num is prime.
@@ -107,27 +102,22 @@ function isPrime(num) {
   // hint: a prime number is only evenly divisible by itself and 1
   // hint2: you can solve this using a for loop
   // note: 0 and 1 are NOT considered prime numbers
-  var num = 5;
-  if (num===1)
-{
+  if (num===1) {
   return false;
-}
-else if(num === 2)
-{
-  return true;
-}else
-{
-  for(var i = 2; i < num; i++)
-  {
-    if(num % i === 0)
-    {
-      return false;
-    }
   }
+  else if(num === 2) {
+    return true;
+  }
+  else {
+  for(var i = 2; i < num; i++) {
+    if(num % i === 0) {
+      return false;
+      }
+    }
   return true;  
+  }
 }
-}
-console.log(isPrime('num'))
+console.log(isPrime(5))
 // Do not modify code below this line.
 // --------------------------------
 
