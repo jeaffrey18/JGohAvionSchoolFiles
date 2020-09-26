@@ -54,12 +54,9 @@ function wordsToSentence(words) {
   // return a string that is all of the words concatenated together
   // spaces need to be between each word
   // example: ['Hello', 'world!'] -> 'Hello world!'
-  let a1= ['Strain', 'Block', 'it'];
-  let a2= ['out', 'Omen!'];
-  let a3= ['I', 'feel', 'the'];
-  return words = a3.concat(a1, a2).join(' ');
+  return words = words.join(' ');
 }
-console.log(wordsToSentence('word'))
+console.log(wordsToSentence(["I","feel","the","strain,","Block","it","out","Omen."]))
 
 function contains(arr, item) {
   // check to see if item is inside of arr
@@ -79,24 +76,25 @@ function addNumbers(numbers) {
   // numbers is an array of integers.
   // add all of the integers and return the value
   let sum = 0
-  for (let i = 0; i < arguments.length; i++) {
-      sum = sum + arguments[i];
+    for (let i = 0; i < numbers.length; i++) {
+      sum = sum + numbers[i];
   }
   return sum;
 }
-console.log(addNumbers(10, 5, 6, 9))
+
+console.log(addNumbers([10, 10, 16]))
 
 
 function averageTestScore(testScores) {
   // testScores is an array.  Iterate over testScores and compute the average.
   // return the average
   let sum = 0
-  for (let i = 0; i < arguments.length; i++) {
-      sum = sum + arguments[i];
+  for (let i = 0; i < testScores.length; i++) {
+      sum = sum + testScores[i];
   }
-  return sum / arguments.length;
+  return sum / testScores.length;
 }
-console.log(averageTestScore(10, 5, 6, 9))
+console.log(averageTestScore([10, 5, 6, 9]))
 
 
 function largestNumber(numbers) {
@@ -112,12 +110,19 @@ function multiplyArguments() {
   // if no arguments are passed in return 0
   // if one argument is passed in just return it
   let sum = 1;
-  for (let i = 0; i < arguments.length; i++) {
-      sum *= arguments[i];
+  if(arguments.length == 0){
+    return 0;}
+  else if(arguments.length == 1){
+    return arguments[0];
   }
+  else{
+    for (let i=0; i < arguments.length; i++) {
+        sum*= arguments[i];
+    }
   return sum;
+  }
 }
- console.log(multiplyArguments(10,5,6,9))
+console.log(multiplyArguments(1))
 
 // Do not modify code below this line.
 // --------------------------------

@@ -6,7 +6,8 @@ function getBiggest(x, y) {
   // if they are the same return either one
   if (x >= y) {
     return x;
-  } else {
+  } 
+  else {
     return y;
   }
 }
